@@ -1,0 +1,76 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Lato-Rg';
+    src: url('./../fonts/Lato-Regular.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+:root {
+    --navi: rgb(255, 255, 255);
+}
+
+/* ========================================================== 
+                            Header
+========================================================== */
+
+body {
+    font-family: 'Lato-Rg';
+    background-color: rgba(0, 116, 75, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 100vh;
+    background: url('./../img/basketball.jpg') center / cover;
+}
+
+.nav__main {
+    display: flex;
+    color: var(--navi);
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 24px 100px 24px 48px;
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+h1, a {
+    color: var(--navi);
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}

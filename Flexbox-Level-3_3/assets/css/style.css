@@ -1,0 +1,72 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1440px;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    height: 100vh;
+    transition: all 300ms ease-in-out;
+}
+
+.berg, .fluss, .baum, .see {
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+    filter: grayscale(100%);
+    flex-grow: 1;
+}
+
+.berg {
+    background: url('./../img/berg.jpg') left / cover no-repeat;
+}
+
+.fluss {
+    background: url('./../img/fluss.jpg') left / cover no-repeat;
+}
+
+.baum {
+    background: url('./../img/baum.jpg') left / cover no-repeat;
+}
+
+.see {
+    background: url('./../img/gletschersee.jpg') left / cover no-repeat;
+}
+
+.berg:hover, .fluss:hover, .baum:hover, .see:hover {
+    filter: none;
+    flex-grow: 3;
+    background-position: right;
+}

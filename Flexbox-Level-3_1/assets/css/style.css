@@ -1,0 +1,159 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Railway';
+    src: url('./../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+:root {
+    --navi-links: rgb(51, 51, 51);
+    --navi-links-hover: rgb(51, 122, 183);
+    --navi-logo: rgb(102, 102, 102);
+    --navi-logo-hover: rgb(51, 51, 51);
+    --content-text: rgb(255, 255, 255);
+    --hero-btn: rgb(116, 92, 249);
+    --hero-btn-hover: rgb(89, 60, 255);
+}
+
+/* ========================================================== 
+                            Header
+========================================================== */
+
+body {
+    font-family: 'Railway';
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 100vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav__main {
+    height: 76px;
+    display: flex;
+    color: var(--navi);
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 24px 50px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.logo {
+    color: var(--navi-logo);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.logo:hover {
+    color: var(--navi-logo-hover);
+}
+
+a {
+    color: var(--navi-links);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--navi-links-hover);
+}
+
+.hero {
+    background: url('./../img/ocean_background.jpg') center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 900px;
+}
+
+.hero h1 {
+    color: var(--content-text);
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 105%;
+    text-align: center;
+}
+
+.hero p {
+    color: var(--content-text);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 170%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons a {
+    text-align: center;
+    color: var(--content-text);
+    width: 200px;
+    padding: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 500ms all ease-in-out;
+}
+
+.buttons a:nth-of-type(1) {
+    background-color: var(--hero-btn);
+    border: 2px solid var(--hero-btn);
+}
+
+.buttons a:nth-of-type(1):hover {
+    background-color: var(--hero-btn-hover);
+    border: 2px solid var(--hero-btn-hover);
+}
+
+.buttons a:nth-of-type(2) {
+    border: 2px solid var(--content-text);
+}
+
+.buttons a:nth-of-type(2):hover {
+    background-color: var(--content-text);
+    color: black;
+}
