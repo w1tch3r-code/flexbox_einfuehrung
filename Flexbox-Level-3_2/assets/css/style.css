@@ -64,11 +64,13 @@ header {
 .logo {
     width: 22px;
     height: 22px;
+    flex-shrink: 0;
 }
 
 .nav__main {
     display: flex;
     align-items: baseline;
+    /* margin-right: auto; */  /* Als andere Möglichkeit für margin-left: auto; bei nav__sub */
 }
 
 .nav__ul {
